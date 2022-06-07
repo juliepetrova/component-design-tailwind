@@ -22,8 +22,8 @@
 </template>
 
 <script>
-import GssButtonOutlined from "./gss-button-outlined.vue";
-import gssButton from "./gss-button.vue";
+import GssButtonOutlined from "./buttons/UI-OutlineBtn.vue";
+import gssButton from "./buttons/UI-Btn.vue";
 export default {
   components: { gssButton, GssButtonOutlined },
   name: "GssCreateModal",

@@ -1,7 +1,7 @@
 <template>
   <button
     type="button"
-    class="flex flex-row justify-center items-center text-primary rounded-full shadow-lg p-3 py-2 tracking-wider hover:bg-primary hover:text-white"
+    class="flex flex-row justify-center items-center text-primary rounded-full shadow-lg drop-shadow-xl p-3 py-2 tracking-wider hover:bg-primary hover:text-white"
     :class="{ 'opacity-40': isDisabled }"
     :disabled="isDisabled"
   >

@@ -1,14 +1,17 @@
 <template>
-  <div class="m-16 items-center text-left min-h-screen">
-    <div class="flex flex-row space-x-10 w-full">
-      <div class="hidden w-64 shrink-0 lg:block lg:pr-8">
-        <div class="sticky -mt-20 top-32">
-          <UISideMenu />
+  <div class="body">
+    <UIHeader />
+
+    <div class="p-16 items-center text-left min-h-screen">
+      <div class="flex flex-row space-x-10 w-full">
+        <div class="hidden w-64 shrink-0 lg:block lg:pr-8">
+          <div class="sticky top-32 -mt-20 max-h-screen overflow-y-auto">
+            <UISideMenu />
+          </div>
         </div>
-      </div>
-      <main class="flex flex-col min-w-0 flex-1 pt-12">
-        <router-view />
-        <!-- 
+        <main class="flex flex-col min-w-0 flex-1">
+          <router-view />
+          <!-- 
         <GssTitle title="Headings" />
 
         <div class="ml-5 space-y-3">
@@ -124,12 +127,13 @@
           <search-input><i class="ri-search-line"></i></search-input>
         </div>
         -->
-        -->
-      </main>
+          -->
+        </main>
 
-      <div class="z-10 order-2 hidden w-64 min-w-0 shrink-0 xl:block xl:pl-8">
-        <div class="sticky top-32 -mt-20 max-h-screen overflow-y-auto pb-10">
-          <UIRightBanner />
+        <div class="z-10 order-2 hidden w-64 min-w-0 shrink-0 xl:block xl:pl-8">
+          <div class="sticky top-32 -mt-20 max-h-screen overflow-y-auto pb-10">
+            <UIRightBanner />
+          </div>
         </div>
       </div>
     </div>
@@ -157,28 +161,30 @@
 // import ShortInput from "../Shared/tailwind/AnswerTypes/short_input.vue";
 import UISideMenu from "../components/UI-SideMenu.vue";
 import UIRightBanner from "../components/UI-RightBanner.vue";
+import UIHeader from "../components/UI-Header.vue";
 
 export default {
   name: "Showcase",
-  // components: {
-  //   GssTitle,
-  //   GssTable,
-  //   // GssCreateModal,
-  //   EditIcon,
-  //   ViewIcon,
-  //   DeleteIcon,
-  //   CardWithImage,
-  //   SearchInput,
-  //   Dropdown,
-  //   EmailInput,
-  //   MultipleChoice,
-  //   OpenAnswer,
-  //   RadioButton,
-  //   RatingSlider,
-  //   ShortInput,
-  UISideMenu,
-  UIRightBanner,
-  // },
+  components: {
+    //   GssTitle,
+    //   GssTable,
+    //   // GssCreateModal,
+    //   EditIcon,
+    //   ViewIcon,
+    //   DeleteIcon,
+    //   CardWithImage,
+    //   SearchInput,
+    //   Dropdown,
+    //   EmailInput,
+    //   MultipleChoice,
+    //   OpenAnswer,
+    //   RadioButton,
+    //   RatingSlider,
+    //   ShortInput,
+    UISideMenu,
+    UIRightBanner,
+    UIHeader,
+  },
   data() {
     return {
       options: [
@@ -197,11 +203,14 @@ export default {
       ],
     };
   },
-  components: { UISideMenu, UIRightBanner },
 };
 </script>
 
 <style scoped>
+.body {
+  color: #2c3e50;
+  background-color: #2c3e50;
+}
 .bg-color {
   background-color: #cb611a;
 }

@@ -1,3 +1,5 @@
+const colours = require("tailwindcss/colors");
+
 module.exports = {
   purge: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
@@ -6,7 +8,13 @@ module.exports = {
         poppins: ["Poppins", "sans-serif"],
       },
       colors: {
-        primary: "#6FD995",
+        primary: "#0c4a6e",
+        transparent: "transparent",
+        orange: colours.orange,
+        amber: colours.amber,
+        teal: colours.teal,
+        cyan: colours.cyan,
+        sky: colours.sky,
       },
     },
   },

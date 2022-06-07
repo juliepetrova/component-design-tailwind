@@ -1,54 +1,48 @@
 <template>
   <div>
-    <GssTitle title="Buttons" />
+    <ui-title title="Buttons" :classProps="'text-white'" />
 
-    <div class="flex w-full space-x-3 ml-5">
-      <GssButton text="Solid Button" />
-      <GssIconButton text="Icon Button"
-        ><i class="ri-instagram-line"></i
-      ></GssIconButton>
-      <GssButtonOutlined text="Outlined Button" />
-    </div>
-    <div class="flex w-full space-x-3 ml-5">
-      <etv-button text="Icon Button"
-        ><i class="ri-instagram-line"></i
-      ></etv-button>
-      <etv-button text="Disabled Button" :isDisabled="true"
-        ><i class="ri-twitter-line"></i
-      ></etv-button>
-      <etv-outlined-button text="Outlined Button"
-        ><i class="ri-twitter-line"></i
-      ></etv-outlined-button>
-    </div>
-    <div class="flex h-24 bg-color p-4 space-x-5 mb-16 w-1/3 ml-5">
-      <neumorphic-button><i class="ri-instagram-line"></i></neumorphic-button>
-      <neumorphic-button><i class="ri-linkedin-line"></i></neumorphic-button>
-      <neumorphic-button><i class="ri-twitter-line"></i></neumorphic-button>
-    </div>
+    <ui-subtitle text="Default buttons" :classProps="'text-white mt-4'" />
+    <ui-background-components
+      :classProps="'bg-gradient-to-r from-cyan-400 to-sky-500'"
+    >
+      <regular />
+    </ui-background-components>
+
+    <ui-subtitle text="Pill buttons" :classProps="'text-white mt-4'" />
+
+    <ui-background-components
+      :classProps="'bg-gradient-to-r from-teal-400 to-cyan-400'"
+    >
+      <pill />
+    </ui-background-components>
+    <ui-subtitle text="Neumorphic buttons" :classProps="'text-white mt-4'" />
+
+    <ui-background-components
+      :classProps="'bg-gradient-to-r from-orange-500 to-amber-700'"
+    >
+      <neumorphic />
+    </ui-background-components>
   </div>
 </template>
 
 <script>
 import "remixicon/fonts/remixicon.css";
 
-import NeumorphicButton from "../Shared/css-only/neumorphic-button.vue";
-import GssButton from "../Shared/tailwind/gss-button.vue";
-import GssButtonOutlined from "../Shared/tailwind/gss-button-outlined.vue";
-import GssTitle from "../Shared/tailwind/gss-title.vue";
-import EtvButton from "../Shared/tailwind/ETV-Button.vue";
-import EtvOutlinedButton from "../Shared/tailwind/ETV-OutlinedButton.vue";
-import GssIconButton from "../Shared/tailwind/gss-icon-button.vue";
+import UiTitle from "../Shared/tailwind/headings/UI-Title.vue";
+import Regular from "../components/buttons/regular.vue";
+import UiBackgroundComponents from "../components/UI-BackgroundComponents.vue";
+import Pill from "../components/buttons/pill.vue";
+import Neumorphic from "../components/buttons/neumorphic.vue";
+import UiSubtitle from "../Shared/tailwind/headings/UI-Subtitle.vue";
 export default {
   components: {
-    GssTitle,
-    GssButtonOutlined,
-    GssButton,
-    NeumorphicButton,
-    EtvButton,
-    GssIconButton,
-    EtvOutlinedButton,
+    UiTitle,
+    Regular,
+    UiBackgroundComponents,
+    Pill,
+    Neumorphic,
+    UiSubtitle,
   },
 };
 </script>
-
-<style></style>
