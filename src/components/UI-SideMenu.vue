@@ -2,33 +2,40 @@
   <nav class="mx-auto space-y-4 text-gray-400">
     <h1 class="uppercase text-white text-lg font-bold">All components</h1>
 
-    <a
+    <router-link
+      to="buttons"
       class="flex items-center whitespace-nowrap rounded py-2 px-6 font-lg transition-colors duration-200 hover:text-white lg:py-0 lg:px-0 lg:text-sm text-gray-400"
-      >Buttons</a
+      >Buttons</router-link
     >
-    <a
+    <router-link
+      to="cards"
       class="flex items-center whitespace-nowrap rounded py-2 px-6 font-lg transition-colors duration-200 hover:text-white lg:py-0 lg:px-0 lg:text-sm text-gray-400"
-      >Cards</a
+      >Cards</router-link
     >
-    <a
+    <router-link
+      to="inputs"
       class="flex items-center whitespace-nowrap rounded py-2 px-6 font-lg transition-colors duration-200 hover:text-white lg:py-0 lg:px-0 lg:text-sm text-gray-400"
-      >Input types</a
+      >Input types</router-link
     >
-    <a
+    <router-link
+      to="forms"
       class="flex items-center whitespace-nowrap rounded py-2 px-6 font-lg transition-colors duration-200 hover:text-white lg:py-0 lg:px-0 lg:text-sm text-gray-400"
-      >Forms</a
+      >Forms</router-link
     >
-    <a
+    <router-link
+      to="modals"
       class="flex items-center whitespace-nowrap rounded py-2 px-6 font-lg transition-colors duration-200 hover:text-white lg:py-0 lg:px-0 lg:text-sm text-gray-400"
-      >Modals</a
+      >Modals</router-link
     >
-    <a
+    <router-link
+      to="navigation"
       class="flex items-center whitespace-nowrap rounded py-2 px-6 font-lg transition-colors duration-200 hover:text-white lg:py-0 lg:px-0 lg:text-sm text-gray-400"
-      >Navigation bars</a
+      >Navigation bars</router-link
     >
-    <a
+    <router-link
+      to="tabs"
       class="flex items-center whitespace-nowrap rounded py-2 px-6 font-lg transition-colors duration-200 hover:text-white lg:py-0 lg:px-0 lg:text-sm text-gray-400"
-      >Tabs</a
+      >Tabs</router-link
     >
   </nav>
 </template>

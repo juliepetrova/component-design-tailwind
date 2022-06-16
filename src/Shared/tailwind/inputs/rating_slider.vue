@@ -93,7 +93,7 @@ export default {
     },
     updateSliderStyle(sliderOffset, rating) {
       const bubble = document.getElementById(
-        this.questionReferenceNumber.toString()
+        this.referenceNumber.toString()
       );
       bubble.textContent = rating;
       bubble.style.left = `calc(${sliderOffset}% - 14px)`;

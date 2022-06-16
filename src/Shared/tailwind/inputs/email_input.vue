@@ -1,12 +1,12 @@
 <template>
   <div
-    class="relative rounded-md appearance-none border border-blue-300 p-3 mb-2"
+    class="relative rounded-md appearance-none border border-blue-300 p-2 mb-2 bg-white"
   >
     <input
       @input="validateEmail"
       class="text-gray-700 text-sm leading-tight focus:outline-none focus:shadow-outline"
       type="email"
-      :placeholder="questionHint"
+      :placeholder="placeholder"
       v-model="answer"
     />
     <span class="absolute inset-y-0 right-0 flex items-center pr-2">
@@ -24,7 +24,7 @@
 <script>
 export default {
   props: {
-    questionHint: {
+    placeholder: {
       type: String,
       required: true,
     },

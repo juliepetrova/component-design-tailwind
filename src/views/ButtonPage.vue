@@ -9,6 +9,13 @@
       <regular />
     </ui-background-components>
 
+    <ui-code-block>
+      <script type="prism-html-markup">
+        <button class="rounded-md bg-primary p-2 px-3 text-white hover:bg-transparent border-2
+          border-primary border-solid hover:text-primary"> Solid Button </button>
+      </script>
+    </ui-code-block>
+
     <ui-subtitle text="Pill buttons" :classProps="'text-white mt-4'" />
 
     <ui-background-components
@@ -16,6 +23,16 @@
     >
       <pill />
     </ui-background-components>
+
+    <ui-code-block>
+      <script type="prism-html-markup">
+        <button class="rounded-md bg-primary p-2 px-3 text-white hover:bg-transparent border-2
+          border-primary border-solid hover:text-primary"
+          @click="$emit('clicked')" > Solid Button
+        </button>
+      </script>
+    </ui-code-block>
+
     <ui-subtitle text="Neumorphic buttons" :classProps="'text-white mt-4'" />
 
     <ui-background-components
@@ -35,6 +52,7 @@ import UiBackgroundComponents from "../components/UI-BackgroundComponents.vue";
 import Pill from "../components/buttons/pill.vue";
 import Neumorphic from "../components/buttons/neumorphic.vue";
 import UiSubtitle from "../Shared/tailwind/headings/UI-Subtitle.vue";
+import UiCodeBlock from "../components/UI-CodeBlock.vue";
 export default {
   components: {
     UiTitle,
@@ -43,6 +61,7 @@ export default {
     Pill,
     Neumorphic,
     UiSubtitle,
+    UiCodeBlock,
   },
 };
 </script>
