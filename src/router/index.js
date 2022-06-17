@@ -4,6 +4,7 @@ import Showcase from "../views/Showcase.vue";
 import ButtonPage from "../views/ButtonPage.vue";
 import CardPage from "../views/CardPage.vue";
 import InputPage from "../views/InputPage.vue";
+import AccordionPage from "../views/AccordionPage.vue";
 import ButtonsRegular from "../components/buttons/regular.vue";
 
 Vue.use(VueRouter);
@@ -25,6 +26,10 @@ const routes = [
       {
         path: "inputs",
         component: InputPage,
+      },
+      {
+        path: "accordion",
+        component: AccordionPage,
       },
     ],
   },

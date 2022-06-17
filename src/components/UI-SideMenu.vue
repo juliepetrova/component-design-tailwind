@@ -23,6 +23,11 @@
       >Forms</router-link
     >
     <router-link
+      to="accordion"
+      class="flex items-center whitespace-nowrap rounded py-2 px-6 font-lg transition-colors duration-200 hover:text-white lg:py-0 lg:px-0 lg:text-sm text-gray-400"
+      >Accordion</router-link
+    >
+    <router-link
       to="modals"
       class="flex items-center whitespace-nowrap rounded py-2 px-6 font-lg transition-colors duration-200 hover:text-white lg:py-0 lg:px-0 lg:text-sm text-gray-400"
       >Modals</router-link
