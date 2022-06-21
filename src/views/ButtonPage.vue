@@ -4,7 +4,7 @@
 
     <ui-subtitle text="Default buttons" :classProps="'text-white mt-4'" />
     <ui-background-components
-      :classProps="'bg-gradient-to-r from-cyan-400 to-sky-500'"
+      classProps="bg-gradient-to-r from-cyan-400 to-sky-500"
     >
       <regular />
     </ui-background-components>
@@ -19,7 +19,7 @@
     <ui-subtitle text="Pill buttons" :classProps="'text-white mt-4'" />
 
     <ui-background-components
-      :classProps="'bg-gradient-to-r from-teal-400 to-cyan-400'"
+      classProps="bg-gradient-to-r from-teal-400 to-cyan-400"
     >
       <pill />
     </ui-background-components>
@@ -36,7 +36,7 @@
     <ui-subtitle text="Neumorphic buttons" :classProps="'text-white mt-4'" />
 
     <ui-background-components
-      :classProps="'bg-gradient-to-r from-orange-500 to-amber-700'"
+      classProps="bg-gradient-to-r from-orange-500 to-amber-700"
     >
       <neumorphic />
     </ui-background-components>
