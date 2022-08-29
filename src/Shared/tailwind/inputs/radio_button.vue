@@ -9,7 +9,7 @@
         :id="option.ref"
         type="radio"
         name="options"
-        class="w-5 h-5 focus:outline-none focus:ring-2  mr-2"
+        class="w-5 h-5 focus:outline-none focus:ring-2 mr-2"
         v-bind:value="option.value"
         @change="$emit('selected', option.value, true)"
         checked

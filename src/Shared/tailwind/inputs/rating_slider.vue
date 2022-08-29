@@ -92,9 +92,7 @@ export default {
       this.$emit("selected", rating.toString());
     },
     updateSliderStyle(sliderOffset, rating) {
-      const bubble = document.getElementById(
-        this.referenceNumber.toString()
-      );
+      const bubble = document.getElementById(this.referenceNumber.toString());
       bubble.textContent = rating;
       bubble.style.left = `calc(${sliderOffset}% - 14px)`;
       this.selectionBackground = `linear-gradient(to right, #3A96D2 ${sliderOffset}%, #EBF5FB ${sliderOffset}% ${

@@ -4,13 +4,13 @@
     @click="$emit('clicked')"
   >
     <slot></slot>
-    <h1 class="pl-2">{{ text }}</h1>
+    <h1 class="px-2">{{ text }}</h1>
   </button>
 </template>
 
 <script>
 export default {
-  name: "GSSButton",
+  name: "UI-Btn",
   props: {
     text: String,
   },

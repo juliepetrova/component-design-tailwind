@@ -1,5 +1,7 @@
 <template>
-  <h2 class="text-xl font-semibold whitespace-pre-wrap" :class="classProps">{{ text }}</h2>
+  <h2 class="text-xl font-semibold whitespace-pre-wrap" :class="classProps">
+    {{ text }}
+  </h2>
 </template>
 
 <script>

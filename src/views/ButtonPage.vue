@@ -11,8 +11,21 @@
 
     <ui-code-block>
       <script type="prism-html-markup">
-        <button class="rounded-md bg-primary p-2 px-3 text-white hover:bg-transparent border-2
-          border-primary border-solid hover:text-primary"> Solid Button </button>
+
+        <button
+          class="flex align-middle rounded-md bg-primary p-2 px-3 font-light text-white
+          hover:bg-transparent border-2 border-primary border-solid hover:text-primary"
+          @click="$emit('clicked')"
+        >
+          <slot></slot>
+          <h1 class="px-2">Solid/Icon Button</h1>
+        </button>
+
+        <button
+          class="rounded-md border-2 border-primary border-solid hover:bg-primary
+           text-primary p-2 px-3 hover:text-white focus:outline-none focus:shadow-outline"
+          @click="$emit('clicked')"
+        >Outlined Button</button>
       </script>
     </ui-code-block>
 

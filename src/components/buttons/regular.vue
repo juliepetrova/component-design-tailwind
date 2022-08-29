@@ -3,11 +3,11 @@
     <div class="flex w-full flex-col items-center justify-center">
       <div class="px-4 py-16">
         <div class="flex space-x-3 ml-5">
-          <GssButton text="Solid Button" />
-          <GssIconButton text="Icon Button"
+          <IconButton text="Solid Button" />
+          <IconButton text="Icon Button"
             ><i class="ri-instagram-line"></i
-          ></GssIconButton>
-          <GssButtonOutlined text="Outlined Button" />
+          ></IconButton>
+          <ButtonOutlined text="Outlined Button" />
         </div>
       </div>
     </div>
@@ -17,14 +17,12 @@
 <script>
 import "remixicon/fonts/remixicon.css";
 
-import GssButton from "../../Shared/tailwind/buttons/UI-Btn.vue";
-import GssButtonOutlined from "../../Shared/tailwind/buttons/UI-OutlineBtn.vue";
-import GssIconButton from "../../Shared/tailwind/buttons/UI-IconBtn.vue";
+import ButtonOutlined from "../../Shared/tailwind/buttons/UI-OutlineBtn.vue";
+import IconButton from "../../Shared/tailwind/buttons/UI-IconBtn.vue";
 export default {
   components: {
-    GssButtonOutlined,
-    GssButton,
-    GssIconButton,
+    ButtonOutlined,
+    IconButton,
   },
 };
 </script>

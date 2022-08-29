@@ -4,6 +4,7 @@ import Showcase from "../views/Showcase.vue";
 import ButtonPage from "../views/ButtonPage.vue";
 import CardPage from "../views/CardPage.vue";
 import InputPage from "../views/InputPage.vue";
+import FormPage from "../views/FormPage.vue";
 import AccordionPage from "../views/AccordionPage.vue";
 import NavigationPage from "../views/NavigationPage.vue";
 import ModalPage from "../views/ModalPage.vue";
@@ -29,6 +30,10 @@ const routes = [
       {
         path: "inputs",
         component: InputPage,
+      },
+      {
+        path: "forms",
+        component: FormPage,
       },
       {
         path: "accordion",
