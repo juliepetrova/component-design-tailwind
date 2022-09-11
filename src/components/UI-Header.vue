@@ -1,6 +1,6 @@
 <template>
   <header
-    class="sticky top-0 z-30 h-[72px] bg-gray-900 bg-opacity-50 backdrop-blur backdrop-filter firefox:bg-opacity-90"
+    class="fixed w-full top-0 z-30 h-[72px] bg-gray-900 bg-opacity-50 backdrop-blur backdrop-filter firefox:bg-opacity-90"
   >
     <div class="mx-auto max-w-8xl xl:px-8">
       <div

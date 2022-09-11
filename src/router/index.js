@@ -9,6 +9,7 @@ import AccordionPage from "../views/AccordionPage.vue";
 import NavigationPage from "../views/NavigationPage.vue";
 import ModalPage from "../views/ModalPage.vue";
 import TablePage from "../views/TablePage.vue";
+import SlotsPage from "../views/SlotsPage.vue";
 import ButtonsRegular from "../components/buttons/regular.vue";
 
 Vue.use(VueRouter);
@@ -50,6 +51,10 @@ const routes = [
       {
         path: "tables",
         component: TablePage,
+      },
+      {
+        path: "slots",
+        component: SlotsPage,
       },
     ],
   },

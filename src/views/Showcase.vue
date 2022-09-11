@@ -8,7 +8,7 @@
             <UISideMenu />
           </div>
         </div>
-        <main class="flex flex-col min-w-0 flex-1">
+        <main class="flex flex-col min-w-0 flex-1 mt-16">
           <router-view />
         </main>
 

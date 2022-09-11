@@ -47,6 +47,11 @@
       class="flex items-center whitespace-nowrap rounded py-2 px-6 font-lg transition-colors duration-200 hover:text-white lg:py-0 lg:px-0 lg:text-sm text-gray-400"
       >Tables</router-link
     >
+    <router-link
+      to="slots"
+      class="flex items-center whitespace-nowrap rounded py-2 px-6 font-lg transition-colors duration-200 hover:text-white lg:py-0 lg:px-0 lg:text-sm text-gray-400"
+      >Slots</router-link
+    >
   </nav>
 </template>
 
